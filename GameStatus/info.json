@@ -1,0 +1,10 @@
+{
+    "AUTHOR" : "keough99",
+    "INSTALL_MSG" : "DabbleBot game changer cog has been installed",
+    "NAME" : "GameStatus",
+    "SHORT" : "DabbleBot game changer cog",
+    "DESCRIPTION" : "DabbleBot game changer cog",
+    "TAGS" : ["status", "game", "DabbleBot"],
+    "REQUIREMENTS" : ["discord.ext"],
+    "HIDDEN" : false
+}
