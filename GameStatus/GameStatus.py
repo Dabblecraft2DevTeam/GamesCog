@@ -12,9 +12,8 @@ class GamesCog:
     @commands.command()
     async def mycom(self):
         """This does stuff!"""
-
         #Your code will go here
-	list = ["Do \help for help", "“I am the walrus”", "“To kill a mocking bird”", "“Living is easy with eyes closed, misunderstanding all you see”"]
+	list = ["Do \help for help", "I am the walrus", "To kill a mocking bird", "Living is easy with eyes closed", "Misunderstanding all you see"]
 	while True:
         	time.sleep(60)
 		await client.change_presence(game=discord.Game(name=random.choice(list)))
