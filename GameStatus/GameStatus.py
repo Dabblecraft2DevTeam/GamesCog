@@ -9,14 +9,12 @@ class GamesCog:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
-    async def mycom(self):
-        """This does stuff!"""
-        #Your code will go here
-	list = ["Do \help for help", "I am the walrus", "To kill a mocking bird", "Living is easy with eyes closed", "Misunderstanding all you see"]
-	while True:
-        	time.sleep(60)
-		await client.change_presence(game=discord.Game(name=random.choice(list)))
-		
+async def change_status(self):
+ l = ["Do \help for help", "I am the walrus", "To kill a mocking bird", "Living is easy with eyes closed", "Misunderstanding all you see"]
+ await self.change_presence(activity=discord.Game(name=random.choice(l)))
+ await asyncio.sleep(60)
+@bot.event
+async def on_ready(self):
+ self.loop.create_task(change_status())
 def setup(bot):
-    bot.add_cog(Mycog(bot))
+    bot.add_cog(GamesCog(bot))
