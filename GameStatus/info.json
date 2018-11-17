@@ -5,6 +5,5 @@
     "SHORT" : "DabbleBot game changer cog",
     "DESCRIPTION" : "DabbleBot game changer cog",
     "TAGS" : ["status", "game", "DabbleBot"],
-    "REQUIREMENTS" : ["discord.ext"],
     "HIDDEN" : false
 }
