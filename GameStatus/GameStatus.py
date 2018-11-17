@@ -1,7 +1,7 @@
 import discord
 import random
 import time
-from discord.ext import commands
+from discord.ext import events
 
 class GamesCog:
     """My custom cog that does stuff!"""
