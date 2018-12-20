@@ -8,7 +8,7 @@ class GamesCog:
 
     def __init__(self, bot):
         self.bot = bot
-    @bot.event()
+    @bot.event
     async def change_status(self):
         l = ["Do \help for help", "I am the walrus", "To kill a mocking bird", "Living is easy with eyes closed, Misunderstanding all you see"]
         await self.change_presence(activity=discord.Game(name=random.choice(l)))
